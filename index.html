@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ko" >
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website">
+
+    <!-- 썸네일 게시판이 아닐때 -->
+    <meta property="og:image" content="common/img/thum.png"/>
+
+    <!-- 썸네일 게시판이 아닐때 -->
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <link rel="canonical" href=""/>
+    <link rel="shortcut icon" href="common/logo.ico"/>
+
+    <!----------------------------------------::::PACKAGES::::---------------------------------------->
+    <!-- Jquery -->
+    <script src="common/js/jquery-1.11.3.min.js"></script>
+    <script src="common/js/jquery.placeholder.enhanced-1.5.js"></script>
+    <script src="common/js/jquery.easing.1.3.js"></script>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" media="all" href="common/css/swiper.css">
+    <script src="common/js/swiper.js"></script>
+
+    <!----------------------------------------::::SET-UP::::---------------------------------------->
+    <link rel="stylesheet" media="all" href="common/css/common.css">
+    <!-- 메인일때 -->
+        <link rel="stylesheet" media="all" href="common/css/main.css">
+        <script src="common/js/common.js"></script>
+</head>
+<body>
+    <div id="viewport" class="main">
+    
+        <!-- HEADER -->
+        <div id="header">        
+            <div class="header_wrap">
+                <div class="header_top">
+                </div>
+                <div class="header_bottom">
+                    <div class="table_box header_bottom_bar">
+                        <div class="table_td align_middle align_left logo">
+                            <a href="index.php">
+                                <img src="common/img/common/logo_d.png" />
+                            </a>
+                        </div>
+                        <div class="table_td align_middle align_center menu_1" id="gnb">
+                            <a href="#" class="btn_wrap btn_gnb mobile"></a>
+                            <div class="gnb_container">
+                                <div class="gnb_content">
+                                    <div class="table_box">
+
+                                        <!-- Menu-Sub -->
+                                        <div class="table_td align_middle align_center menu_sub active">
+                                            <a href="#" class="menu_btn"><span>서울창업허브 소개</span></a>
+                                            <div class="menu_list">
+
+                                                <!-- Menu-Sub -->
+                                                <div class="menu_sub active">
+                                                    <a href="#" class="menu_btn"><span>비전과 미션</span></a>
+                                                </div>
+
+                                                <!-- Menu-Sub -->
+                                                <div class="menu_sub">
+                                                    <a href="#" class="menu_btn"><span>주요 성과 소개</span></a>
+                                                </div>
+
+                                                <!-- Menu-Sub -->
+                                                <div class="menu_sub">
+                                                    <a href="#" class="menu_btn"><span>추진 연혁</span></a>
+                                                </div>
+
+                                                <!-- Menu-Sub -->
+                                                <div class="menu_sub">
+                                                    <a href="#" class="menu_btn"><span>운영 안내</span></a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <!-- Menu-Sub -->
+                                        <div class="table_td align_middle align_center menu_sub">
+                                            <a href="#" class="menu_btn"><span>프로그램 소개</span></a>
+                                            <div class="menu_list">
+
+                                                <!-- Menu-Sub -->
+                                                <div class="menu_sub">
+                                                    <a href="#" class="menu_btn"><span>인사말</span></a>
+                                                </div>
+
+                                                <!-- Menu-Sub -->
+                                                <div class="menu_sub">
+                                                    <a href="#" class="menu_btn"><span>행사내용</span></a>
+                                                </div>
+
+                                                <!-- Menu-Sub -->
+                                                <div class="menu_sub">
+                                                    <a href="#" class="menu_btn"><span>주요일정&행사</span></a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <!-- Menu-Sub -->
+                                        <div class="table_td align_middle align_center menu_sub">
+                                            <a href="#" class="menu_btn"><span>미디어 센터</span></a>
+                                            <div class="menu_list">
+
+                                                <!-- Menu-Sub -->
+                                                <div class="menu_sub">
+                                                    <a href="#" class="menu_btn"><span>공지사항</span></a>
+                                                </div>
+
+                                                <!-- Menu-Sub -->
+                                                <div class="menu_sub">
+                                                    <a href="#" class="menu_btn"><span>홍보영상</span></a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <!-- Menu-Sub -->
+                                        <div class="table_td align_middle align_center menu_sub pc">
+                                            <a href="#" class="menu_btn"><span>참가신청</span></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="table_td align_middle align_right menu_2">
+                            <a href="#" class="btn_box btn_apply mobile">참가신청</a>
+                            <a href="#" class="btn_box btn_sns"><img src="common/img/icon/ic_insta.png"/></a>
+                            <a href="#" class="btn_box btn_sns"><img src="common/img/icon/ic_facebook.png"/></a>
+                            <div class="select_box select_1">
+                                <select>
+                                    <option value="">KOR</option>
+                                    <option value="">ENG</option>
+                                </select>
+                            </div>
+                            <a href="#" class="btn_box btn_apply pc">참가신청</a>
+                            <div class="credit mobile">Copyright(C) seoulstartupexpo2019. All rights reserved</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gnb_mask mobile"></div>
+        </div>
+        <!-- //HEADER -->
+        
+        <!-- CONTENT -->
+        <div id="content">
+
+            <div class="content_panel intro_panel">
+                <div class="slider_box slider_1">
+                   <div class="swiper-container slider_container">
+                        <div class="swiper-wrapper slider_wrapper">
+
+                            <!-- Slide -->
+                            <div class="swiper-slide slider_slide">
+                                <div class="block_box block_1">
+                                    <div class="layer">
+                                        <div class="contains size_fullheight">
+                                            <div class="table_box size_full">
+                                                <div class="table_td align_right align_middle">
+                                                    <div class="block_box block_2">
+                                                        <div class="part_1">
+                                                            <div class="tit">Start-up<br/>Seoul 2019</div>
+                                                            <a href="#" class="btn_box btn_apply pc">참가신청</a>
+                                                        </div>
+                                                        <div class="part_2">
+                                                            <div class="txt_1">스타트업 혁명을 위한 창업가 자세와 <br/>글로벌 생태계 전략</div>
+                                                            <div class="line mobile"></div>
+                                                            <div class="txt_2 pc">2019.9.4 - 9.6</div>
+                                                            <div class="txt_3">서울창업허브, DDP(동대문디자인플라자)</div>
+                                                            <div class="txt_2 mobile">2019.9.4 - 9.6</div>
+                                                            <a href="#" class="btn_box btn_apply mobile">참가신청</a>
+                                                        </div>
+                                                        <div class="credit pc"><img src="common/img/main/intro_cre.png"/></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="background">
+                                        <img src="common/img/main/intro_bg.png" class="pc"/>
+                                        <img src="common/img/main/intro_bg_m.jpg" class="mobile"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="block_box block_3">
+                    <div class="contains">
+                        <div class="table_box table_v2">
+
+                            <div class="table_td align_top align_left">
+                                <div class="container">
+                                    <div class="wrap">
+                                        <div class="ic_box ic_1"></div>
+                                        <div class="txt">
+                                            <p class="tit">START-UP SEOUL</p>
+                                            <p class="desc">행사개요</p>
+                                        </div>
+                                        <a href="#" class="ic_box ic_arr1"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="table_td align_top align_left">
+                                <div class="container">
+                                    <div class="wrap">
+                                        <div class="ic_box ic_2"></div>
+                                        <div class="txt">
+                                            <p class="tit">START-UP SEOUL</p>
+                                            <p class="desc">행사개요</p>
+                                        </div>
+                                        <a href="#" class="ic_box ic_arr1"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="table_td align_top align_left">
+                                <div class="container">
+                                    <div class="wrap">
+                                        <div class="ic_box ic_3"></div>
+                                        <div class="txt">
+                                            <p class="tit">START-UP SEOUL</p>
+                                            <p class="desc">행사개요</p>
+                                        </div>
+                                        <a href="#" class="ic_box ic_arr1"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="table_td align_top align_left">
+                                <div class="container">
+                                    <div class="wrap">
+                                        <div class="ic_box ic_4"></div>
+                                        <div class="txt">
+                                            <p class="tit">START-UP SEOUL</p>
+                                            <p class="desc">행사개요</p>
+                                        </div>
+                                        <a href="#" class="ic_box ic_arr1"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content_panel overview_panel pad_1">
+                <div class="contains">
+                    <div class="title_box title_1 mobile">
+                        <div class="eng">
+                            <div class="line"></div>
+                            <div class="txt">CONFERENCE OVERVIEW</div>
+                        </div>
+                        <div class="kr">행사개요</div>
+                    </div>
+                    <div class="table_box">
+                        <div class="table_td align_middle align_left thum">
+                            <img src="common/img/main/overview_book.png"/>
+                        </div>
+                        <div class="table_td align_middle align_right size_fullwidth board">
+                            <div class="title_box title_1 pc">
+                                <div class="eng">
+                                    <div class="line"></div>
+                                    <div class="txt">CONFERENCE OVERVIEW</div>
+                                </div>
+                                <div class="kr">행사개요</div>
+                            </div>
+                            <div class="text_box text_1">
+                                <div class="block_1">서울을 대표하는 스타트업 생태계 행사인 ‘Start-Up Seoul’이 <br class="pc"/>
+                                2019년 9월 4일(Boom-up day) 서울창업허브, 5일과 6일(Main-action day)  <br class="pc"/>
+                                서울창업허브, DDP(동대문디자인플라자)에서 개최됩니다.</div>
+                                <div class="block_2">
+                                    3일 간의 행사기간동안, 전 세계에서 모인 플레이어들과 스타트업계  <br class="pc"/>
+                                    전문가들이 참가하며, 국내외 스타트업 생태계 전문가들의 라운드테이블 세션, 패널토론과 함께  <br class="pc"/>
+                                    혁신적인 스타트업을 만날 수 있는 데모데이 및 창업기업 경연대회가 진행됩니다.
+                                </div>
+                                <div class="table_box block_3">
+                                    <div class="table_tr">
+                                        <div class="table_td align_top align_left tit">행사명</div>
+                                        <div class="table_td align_top align_left info">스타트업 서울 2019</div>
+                                    </div>
+                                    <div class="table_tr">
+                                        <div class="table_td align_top align_left tit">행사일시</div>
+                                        <div class="table_td align_top align_left info">2019-9.4-9.6<br/>서울창업허브, DDP(동대문디자인플라자)</div>
+                                    </div>
+                                    <div class="table_tr">
+                                        <div class="table_td align_top align_left tit">주최.주관</div>
+                                        <div class="table_td align_top align_left info">서울특별시, 서울창업허브</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content_panel event_panel">
+                <div class="slider_box slider_2">
+                   <div class="swiper-container slider_container">
+                        <div class="swiper-wrapper slider_wrapper">
+
+                            <!-- Slide -->
+                            <div class="swiper-slide slider_slide">
+                                <div class="block_box block_4">
+                                    <div class="layer">
+                                        <div class="contains size_fullheight">
+                                            <div class="table_box size_full">
+                                                <div class="table_td align_left align_middle">
+                                                    <div class="block_box block_5">
+                                                        <div class="title_box title_1 part_1">
+                                                            <div class="eng">
+                                                                <div class="line"></div>
+                                                                <div class="txt">KEY EVENTS</div>
+                                                            </div>
+                                                            <div class="kr">주요행사</div>
+                                                        </div>
+                                                        <div class="part_2">
+                                                            <div class="txt_1">01</div>
+                                                            <div class="txt_2">서울창업생태계 현장투어</div>
+                                                            <div class="txt_3">Founder at The Future</div>
+                                                            <a href="#" class="ic_box ic_arr3"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="background">
+                                        <img src="common/img/main/event_bg.png" class="pc"/>
+                                        <img src="common/img/main/event_bg_m.png" class="mobile"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide -->
+                            <div class="swiper-slide slider_slide">
+                                <div class="block_box block_4">
+                                    <div class="layer">
+                                        <div class="contains size_fullheight">
+                                            <div class="table_box size_full">
+                                                <div class="table_td align_left align_middle">
+                                                    <div class="block_box block_5">
+                                                        <div class="title_box title_1 part_1">
+                                                            <div class="eng">
+                                                                <div class="line"></div>
+                                                                <div class="txt">KEY EVENTS</div>
+                                                            </div>
+                                                            <div class="kr">주요행사</div>
+                                                        </div>
+                                                        <div class="part_2">
+                                                            <div class="txt_1">01</div>
+                                                            <div class="txt_2">서울창업생태계 현장투어</div>
+                                                            <div class="txt_3">Founder at The Future</div>
+                                                            <a href="#" class="ic_box ic_arr3"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="background">
+                                        <img src="common/img/main/event_bg.png" class="pc"/>
+                                        <img src="common/img/main/event_bg_m.png" class="mobile"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a href="#" class="swiper-button-next slider_btn_next">
+                            <div class="wrap">
+                                <div class="line_1"><span class="txt">NEXT</span><span class="ic_box ic_arr2"></span></div>
+                                <div class="line_2">붐업 네트워킹 디너</div>
+                            </div>
+                            <div class="background"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content_panel video_panel pad_1">
+                <div class="contains">
+                    <div class="title_box title_1">
+                        <div class="eng">
+                            <div class="line"></div>
+                            <div class="txt">PROMOTIONAL VIDEO</div>
+                        </div>
+                        <div class="kr">홍보영상</div>
+                    </div>
+                    <div class="video_box video_1">
+                        <div class="ratio_box ratio_1">
+                            <div class="ratio_wrap">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xT_8Xum2C3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content_panel partner_panel pad_2">
+                <div class="contains">
+                    <div class="title_box title_1">
+                        <div class="eng">
+                            <div class="line"></div>
+                            <div class="txt">CONFERENCE PARTNERS</div>
+                        </div>
+                        <div class="kr">행사 협력기관</div>
+                    </div>
+                    <div class="block_box block_6">
+                        <div class="table_box table_v2">
+                            <div class="table_td">
+                                <div class="table_td_wrap">
+                                    <img src="common/img/main/partner_p1.jpg"/>
+                                </div>
+                            </div>
+                            <div class="table_td">
+                                <div class="table_td_wrap">
+                                    <img src="common/img/main/partner_p2.png"/>
+                                </div>
+                            </div>
+                            <div class="table_td">
+                                <div class="table_td_wrap">
+                                    <img src="common/img/main/partner_p3.jpg"/>
+                                </div>
+                            </div>
+                            <div class="table_td">
+                                <div class="table_td_wrap">
+                                    <img src="common/img/main/partner_p4.jpg"/>
+                                </div>
+                            </div>
+                            <div class="table_td">
+                                <div class="table_td_wrap">
+                                    <img src="common/img/main/partner_p5.jpg"/>
+                                </div>
+                            </div>
+                            <div class="table_td">
+                                <div class="table_td_wrap">
+                                    <img src="common/img/main/partner_p6.jpg"/>
+                                </div>
+                            </div>
+                            <div class="table_td">
+                                <div class="table_td_wrap">
+                                    <img src="common/img/main/partner_p7.jpg"/>
+                                </div>
+                            </div>
+                            <div class="table_td">
+                                <div class="table_td_wrap">
+                                    <img src="common/img/main/partner_p8.jpg"/>
+                                </div>
+                            </div>
+                            <div class="table_td">
+                                <div class="table_td_wrap">
+                                    <img src="common/img/main/partner_p9.jpg"/>
+                                </div>
+                            </div>
+                            <div class="table_td">
+                                <div class="table_td_wrap">
+                                    <img src="common/img/main/partner_p10.jpg"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content_panel address_panel pad_1">
+                <div class="contains">
+                    <div class="title_box title_1 theme_2">
+                        <div class="eng">
+                            <div class="line"></div>
+                            <div class="txt">CONFERENCE OVERVIEW</div>
+                        </div>
+                        <div class="kr">행사장 오시는길</div>
+                    </div>
+                    <div class="block_box block_7">
+                        <div class="table_box table_v2">
+                            <div class="table_td">
+                                <div class="table_td_wrap">
+                                    <div class="ratio_box ratio_1 map">
+                                        <div class="ratio_wrap">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.1925736417356!2d127.04758731530993!3d37.50337597980975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca40ff601bf27%3A0x7e264911b120a2dd!2s889-41+Daechi-dong%2C+Gangnam-gu%2C+Seoul%2C+South+Korea!5e0!3m2!1sen!2s!4v1563277025685!5m2!1sen!2s" frameborder="0" style="border:0" allowfullscreen width="100%" height="100%"></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="board">
+                                        <div class="tit">
+                                            <div class="ic"></div>
+                                            <div class="txt">서울창업허브</div>
+                                        </div>
+                                        <div class="desc">
+                                            서울특별시 마포구 공덕동 백범로31길 21  서울창업허브 본관<br/>
+                                            02-2115-2000
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table_td">
+                                <div class="table_td_wrap">
+                                    <div class="ratio_box ratio_1 map">
+                                        <div class="ratio_wrap">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.1925736417356!2d127.04758731530993!3d37.50337597980975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca40ff601bf27%3A0x7e264911b120a2dd!2s889-41+Daechi-dong%2C+Gangnam-gu%2C+Seoul%2C+South+Korea!5e0!3m2!1sen!2s!4v1563277025685!5m2!1sen!2s" frameborder="0" style="border:0" allowfullscreen width="100%" height="100%"></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="board">
+                                        <div class="tit">
+                                            <div class="ic"></div>
+                                            <div class="txt">DDP(동대문디자인플라자)</div>
+                                        </div>
+                                        <div class="desc">
+                                            서울특별시 중구 을지로7가 을지로 281<br/>
+                                            02-2153-0000
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- //CONTENT -->
+
+        <!-- FOOTER -->
+        <div id="footer">  
+            <div class="footer_wrap">
+                <div class="footer_top">
+                    <div class="contains">
+                        <div class="table_box">
+                            <div class="table_td align_middle align_left menu size_fullwidth">
+                                <a href="#">개인정보처리방침</a>
+                                <div class="ic"></div>
+                                <a href="#">이메일무단수집거부</a>
+                            </div>
+                            <div class="table_td align_middle align_right share">
+                                <a href="#" class="btn_box btn_sns"><img src="common/img/icon/ic_insta.png"/></a>
+                                <a href="#" class="btn_box btn_sns"><img src="common/img/icon/ic_facebook.png"/></a>
+                                <a href="#" class="btn_box btn_scroll_top"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="contains">
+                        <div class="table_box">
+                            <div class="table_td align_middle align_left credit size_fullwidth">
+                                <div class="txt_1">스타트업 서울 2019</div>
+                                <div class="txt_2">
+                                    서울시 마포구 백범로 31길 21, 서울창업허브<br/>
+                                    TEL : 02-571-9880 (참가문의/접수처) FAX : 02-577-9890 <br class="mobile" />
+                                    E-mail : seoulstartupexpo2018@gmail.com
+                                </div>
+                                <div class="txt_3">
+                                    <a href="index.php" class="logo mobile"><img src="common/img/common/logo_d.png" /></a>
+                                    <div class="txt">Copyright(C) seoulstartupexpo2018. All rights reserved</div>
+                                </div>
+                            </div>
+                            <div class="table_td align_middle align_right partner pc">
+                                <img src="common/img/common/footer_cre.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        </div>
+        <!-- //FOOTER -->
+
+	</div>  
+  </body>
+</html>
